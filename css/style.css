@@ -1,0 +1,66 @@
+:root  {
+    --color1:  #eff2f1;
+    --color2:  rgba(150,  187,  187,  0.2);
+    --color3:  #EF5B5B;
+    --color4:  #38A3A5;
+    --background:  linear-gradient(120deg,  rgba(2,  0,  36,  2) 0%,  rgba(255,  251,  250,  0) 100%,  rgba(255,  255,  255,  1) 100%);
+    --boton-pading:  20px 40px;
+    scroll-behavior:  smooth;
+}
+body  {
+    font-family:  'Raleway',  sans-serif;
+}
+.container  {
+    width:  90%;
+    margin:  0 auto;
+    overflow:  hidden;
+    max-width:  1300px;
+    padding:  40px 0;
+    font-weight:  700;
+}
+.header .container  {
+    padding:  0;
+}
+
+.header{
+    background-color: rgb(0, 158, 214);
+    width: 100%;
+    height:  20vh;
+   
+
+}
+
+.logo{
+    width: 110px;
+    height: 110px;
+    margin-top: 15px;
+
+}
+
+.
+.nav{
+
+
+}
+
+.nav__container{
+
+}
+
+.nav__items{
+    text-decoration: none;
+    color: yellow;
+    margin-left: 30px;
+}
+
+.header_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.header__title{
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
