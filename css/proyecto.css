@@ -97,64 +97,131 @@ body {
 
 .main {
     width: 100%;
-    height: 160vh;
+    height: 190vh;
     background-color: var(--color1);
     display: flex;
 }
 
 .main_container {
     width: 80%;
-    height: 150vh;
+    height: 170vh;
     background-color: var(--color3);
     margin-top: 2vh;
     margin: auto;
     position: relative;
 }
 
-.main_card1 {
+.main_card1, .main_card2, 
+.main_card11,.main_card22,
+.main_card3,.main_card33,
+.main_card4,.main_card44 {
     width: 48%;
     height: 40vh;
-    background-color: var(--color1);
     position: absolute;
-    left: 0;
-    margin-top: 5vh;
-    margin-left: 2%;
-    border-style: solid;
+    border-style:groove;
     border-color: beige;
     border-radius: 10px;
 }
 
-.main_card2 {
-    width: 48%;
-    height: 40vh;
-    background-color: var(--color1);
-    position: absolute;
+.main_card1, .main_card22, 
+.main_card3,.main_card44{
+    left: 0;
+    margin-left: 2%;
+}
+
+.main_card2, .main_card11, 
+.main_card33,.main_card4{
     right: 0;
     margin-right: 2%;
+}
+
+.main_card1, .main_card2,
+.main_card3,.main_card4{
+    background-color: var(--color1);
+}
+
+.main_card11, .main_card22,
+.main_card33,.main_card44{
+    background-color: rgb(255, 255, 255);
+}
+
+.main_card1 {
+    margin-top: 5vh;
+}
+
+.main_card2 {
     margin-top: 45vh;
 }
 
 .main_card11 {
-    width: 48%;
-    height: 40vh;
-    background-color: var(--color3);
-    position: absolute;
-    right: 0;
-    margin-right: 2%;
     margin-top: 5vh;
-   
 }
 
 .main_card22 {
-    width: 48%;
-    height: 40vh;
-    background-color: var(--color3);
-    position: absolute;
-    left: 0;
-    margin-left: 2%;
     margin-top: 45vh;
 }
 
+.main_card3 {
+    margin-top: 85vh;
+}
+
+.main_card4 {
+    margin-top: 125vh;
+}
+
+.main_card33 {
+    margin-top: 85vh;
+   
+}
+
+.main_card44 {
+    margin-top: 125vh;
+}
+
+.image_card{
+    height:30vh ;
+    width:20vw ;
+}
+
+.image_title{
+    font-family: 'Kavoon', cursive;
+}
+
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: .8s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+}
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
 
 
 
@@ -181,7 +248,6 @@ body {
     align-items: center;
 
 }
-
 
 .footer_derechos {
     bottom: 0;
