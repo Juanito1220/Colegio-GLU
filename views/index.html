@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f696794974.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Gimnasio la Unión</title>
 </head>
 
@@ -30,10 +31,26 @@
             </section>
             <nav class="nav">
                 <div class="nav__container">
+                    <label for="menu" class="nav_label">
+                        <img class="nav_menu_hambur" src="/img/menu.svg" alt="">
+                    </label>
+                    <input type="checkbox" id="menu" class="nav_input">
+
                     <div class="nav__menu">
-                        <a class="nav__items nav_items_cta" href="/views/index.html">Inicio</a>
-                        <a class="nav__items" href="/views/Admisiones.html">Admisiones</a>
-                        <a class="nav__items " href="/views/contacto.html">Contactame</a>
+                        <a class="nav__items nav_items_cta" href="/views/index.html">
+                            <div class="icons"><i class='bx bxs-home'></i></div>Inicio
+                        </a>
+                        <a class="nav__items" href="/views/Admisiones.html">
+                            <div class="icons"><i class='bx bx-child'></i></div>Admisiones
+                        </a>
+                        <a class="nav__items " href="/views/contacto.html">
+                            <div class="icons"><i class='bx bxs-contact'></i></div>Contactame
+                        </a>
+                        <div>
+
+                        </div>
+                       
+
                     </div>
                 </div>
             </nav>
@@ -148,11 +165,14 @@
         <img class="footer_background" src="../img/col/domo.png" alt="">
         <img class="footer_img2" src="../img/ave.png" alt="">
         <div class="footer_icons">
-         <img class="footer_img" src="../img/Nube.png" alt="">
-         <a href=""><i class="fab fa-facebook icon"></i></a>
-         <a href=""><i class="fab fa-instagram-square icon"></i></a>
-         <a href=""><i class="fab fa-linkedin icon"></i></a>
-         <a href=""><i class="fas fa-envelope icon"></i></a>
+            <img class="footer_img" src="../img/Nube.png" alt="">
+            <div class="footer_container_img">
+                <a href=""><i class="fab fa-facebook icon"></i></a>
+                <a href=""><i class="fab fa-instagram-square icon"></i></a>
+                <a href=""><i class="fab fa-linkedin icon"></i></a>
+                <a href=""><i class="fas fa-envelope icon"></i></a>
+            </div>
+
         </div>
         <p class="footer_derechos"> ® 2023 Gimnasio La Unión</p>
     </div>
