@@ -22,6 +22,10 @@ body {
     padding: 0;
 }
 
+#oculto {
+    display: none;
+}
+
 .header {
     background-color: rgb(51, 153, 234);
     width: 100%;
@@ -36,6 +40,10 @@ body {
 .header_img_title {
     width: 60%;
     height: 30%;
+}
+
+.menu_doble {
+    display: none;
 }
 
 .logo {
@@ -58,7 +66,8 @@ body {
     text-align: center;
 }
 
-.nav_label, .nav_input{
+.nav_label,
+.nav_input {
     display: none;
 }
 
@@ -813,24 +822,59 @@ main {
         height: 60vh;
     }
 
-.nav_label{
-    display: block;
-    cursor: pointer;
-}
+    .nav_label {
+        display: block;
+        cursor: pointer;
+    }
 
-.nav__menu{
-    position: absolute;
-    top:126px;
-    left: 0;
-    background:rgb(3, 51, 135);
-    width: 100%;
-    clip-path: circle(0 at center);
-    transition:  clip-path 1s ease-in-out;
-}
+    .main_img {
+        -webkit-box-shadow: 0px 2px 19px 11px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0px 2px 19px 11px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 2px 19px 11px rgba(0, 0, 0, 0.3);
+    }
 
-.nav_input:checked + .nav__menu{
-    clip-path: circle(100% at center);
-}
+    #oculto {
+        display: block;
+    }
+
+    .nav__menu_option {
+        display: none;
+    }
+
+    .nav__menu {
+        position: absolute;
+        top: 126px;
+        opacity: 0.8;
+        left: 0;
+        background: rgb(3, 51, 135);
+        width: 100%;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        z-index: 3 
+    }
+
+    .nav__items {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 30px;
+    }
+
+    .nav__items:hover{
+        color: yellow;
+        text-decoration: underline;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .nav_input:checked+.nav__menu {
+        clip-path: circle(100% at center);
+    }
 
 
 }
