@@ -38,25 +38,25 @@
                     <input type="checkbox" onchange="activar()" id="menu" class="nav_input">
 
                     <div class="nav__menu">
-                        <a class="nav__items nav_items_cta" href="/views/index.html">
+                        <a class="nav__items nav_items_cta" onclick="desactivar()" href="/views/index.html">
                             <div class="icons"><i class='bx bxs-home'></i></div>Inicio
                         </a>
-                        <a class="nav__items" href="/views/Admisiones.html">
+                        <a class="nav__items" onclick="desactivar()" href="/views/Admisiones.html">
                             <div class="icons"><i class='bx bx-child'></i></div>Admisiones
                         </a>
-                        <a class="nav__items " href="/views/contacto.html">
+                        <a class="nav__items " onclick="desactivar()" href="/views/contacto.html">
                             <div class="icons"><i class='bx bxs-contact'></i></div>Contactame
                         </a>
-                        <a id="oculto" class="nav__items" href="/views/proyecto.html">
+                        <a id="oculto" class="nav__items" onclick="desactivar()" href="/views/proyecto.html">
                             <div class="icons"><i class='bx bxs-contact'></i></div>Proyecto Institucional
                         </a>
-                        <a id="oculto" class="nav__items" href="/views/Especialidades.html">
+                        <a id="oculto" class="nav__items" onclick="desactivar()" href="/views/Especialidades.html">
                             <div class="icons"><i class='bx bxs-contact'></i></div>Especialidades
                         </a>
-                        <a id="oculto" class="nav__items" href="/views/Normatividad.html">
+                        <a id="oculto" class="nav__items" onclick="desactivar()" href="/views/Normatividad.html">
                             <div class="icons"><i class='bx bxs-contact'></i></div>Normatividad
                         </a>
-                        <a id="oculto" class="nav__items" href="/views/galeria.html">
+                        <a id="oculto" class="nav__items" onclick="desactivar()" href="/views/galeria.html">
                             <div class="icons"><i class='bx bxs-contact'></i></div>Galeria de Fotos
                         </a>
 
@@ -77,7 +77,7 @@
 
 
     <main class="main">
-        <div class="main_container">
+        <div id="main_container" class="main_container">
             <div class="main_card1">
                 <div class="card">
                     <div class="face front">
@@ -85,43 +85,112 @@
                         <img class="image_card" src="/img/mision.svg" alt="">
                     </div>
                     <div class="face back">
-                        <h3>Japan</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius harum molestiae iste, nihil
+                        <h3 class="title_back">MISIÓN</h3>
+                        <p class="text_back">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius harum molestiae iste, nihil
                             doloribus fugiat distinctio ducimus maxime totam nulla fuga odio non aperiam eos?</p>
                     </div>
                 </div>
             </div>
-            <div class="main_card11">
-                <h1 class="image_title">VISIÓN</h1>
-                <img class="image_card" src="/img/vision2.svg" alt="">
-            </div>
             <div class="main_card2">
-                <h1 class="image_title">OBJETIVOS</h1>
-                <img class="image_card" src="/img/objetivos.svg" alt="">
+                <div class="card">
+                    <div class="face front">
+                        <h1 class="image_title">VISIÓN</h1>
+                        <img class="image_card" src="/img/vision2.svg" alt="">
+                    </div>
+                    <div class="face back">
+                        <h3 class="title_back">VISIÓN</h3>
+                        <p class="text_back" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius harum molestiae iste, nihil
+                            doloribus fugiat distinctio ducimus maxime totam nulla fuga odio non aperiam eos?</p>
+                    </div>
+                </div>
             </div>
-            <div class="main_card22">
-                <h1 class="image_title">PEI </h1>
-                <img class="image_card" src="/img/proyecto.svg" alt="">
-            </div>
+
             <div class="main_card3">
-                <h1 class="image_title">BANDERA</h1>
-                <img class="image_card" src="/img/bandera.svg" alt="">
+                <div class="card">
+                    <div class="face front">
+                        <h1 class="image_title">PEI</h1>
+                        <img class="image_card" src="/img/proyecto.svg" alt="">
+                    </div>
+                    <div class="face back">
+                        <h3 class="title_back">PEI</h3>
+                        <p class="text_back">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius harum molestiae iste, nihil
+                            doloribus fugiat distinctio ducimus maxime totam nulla fuga odio non aperiam eos?</p>
+                    </div>
+                </div>
             </div>
-            <div class="main_card33">
-                <h1 class="image_title">MASCOTA</h1>
-                <img class="image_card" src="/img/mascota.svg" alt="">
-            </div>
+
             <div class="main_card4">
-                <h1 class="image_title">ESCUDO</h1>
-                <img class="image_card" src="/img/escudo.svg" alt="">
+                <div class="card">
+                    <div class="face front">
+                        <h1 class="image_title">OBJETIVOS</h1>
+                        <img class="image_card" src="/img/objetivos.svg" alt="">
+                    </div>
+                    <div class="face back">
+                        <h3 class="title_back">OBJETIVOS</h3>
+                        <p class="text_back">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius harum molestiae iste, nihil
+                            doloribus fugiat distinctio ducimus maxime totam nulla fuga odio non aperiam eos?</p>
+                    </div>
+                </div>
             </div>
-            <div class="main_card44">
-                <h1 class="image_title">VALORES</h1>
-                <img class="image_card" src="/img/valores.svg" alt="">
+
+            <div class="main_card5">
+                <div class="card">
+                    <div class="face front">
+                        <h1 class="image_title">BANDERA</h1>
+                        <img class="image_card" src="/img/bandera.svg" alt="">
+                    </div>
+                    <div class="face back">
+                        <h3 class="title_back">BANDERA</h3>
+                        <p class="text_back">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius harum molestiae iste, nihil
+                            doloribus fugiat distinctio ducimus maxime totam nulla fuga odio non aperiam eos?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_card6">
+                <div class="card">
+                    <div class="face front">
+                        <h1 class="image_title">MASCOTA</h1>
+                        <img class="image_card" src="/img/mascota.svg" alt="">
+                    </div>
+                    <div class="face back">
+                        <h3 class="title_back">MASCOTA</h3>
+                        <p class="text_back">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius harum molestiae iste, nihil
+                            doloribus fugiat distinctio ducimus maxime totam nulla fuga odio non aperiam eos?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_card7">
+                <div class="card">
+                    <div class="face front">
+                        <h1 class="image_title">ESCUDO</h1>
+                        <img class="image_card" src="/img/escudo.svg" alt="">
+                    </div>
+                    <div class="face back">
+                        <h3 class="title_back">ESCUDO</h3>
+                        <p class="text_back">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius harum molestiae iste, nihil
+                            doloribus fugiat distinctio ducimus maxime totam nulla fuga odio non aperiam eos?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_card8">
+                <div class="card">
+                    <div class="face front">
+                        <h1 class="image_title">VALORES</h1>
+                        <img class="image_card" src="/img/valores.svg" alt="">
+                    </div>
+                    <div class="face back">
+                        <h3 class="title_back">VALORES</h3>
+                        <p class="text_back">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius harum molestiae iste, nihil
+                            doloribus fugiat distinctio ducimus maxime totam nulla fuga odio non aperiam eos?</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
-
+    <script src="../js/proyecto.js"></script>
 </body>
 
 <footer>

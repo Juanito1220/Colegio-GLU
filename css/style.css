@@ -944,9 +944,7 @@ main {
     .footer_background {
         height: 180px;
     }
-}
 
-@media screen and (max-width:436px) {
     .footer_img {
         width: 90px;
         height: 60px;
