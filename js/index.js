@@ -39,3 +39,6 @@ function showSlides(n) {
     quadrates[slideIndex - 1].className += " active";
 }
 
+
+
+
