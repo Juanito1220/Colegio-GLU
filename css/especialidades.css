@@ -2,6 +2,7 @@
     --color1: rgb(51, 153, 234);
     --color2: rgb(2, 121, 197);
     --color3: rgb(0, 109, 185);
+    --color4: rgb(40, 58, 146);
     scroll-behavior: smooth;
 }
 
@@ -109,6 +110,76 @@ body {
     justify-content: space-evenly;
     align-items: center;
 
+}
+
+.main {
+    padding-top: 30px;
+    width: 100%;
+    height: 850px;
+    background-color: var(--color1);
+}
+
+.main_container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: auto;
+    width: 80%;
+    height: 100px;
+    background-color: var(--color3);
+}
+
+.main_title {
+    text-align: center;
+    color: rgb(221, 247, 118);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.card {
+    height: 300px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 15px;
+}
+
+.card_image {
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.main_cards {
+    margin-top: 20px;
+    background-color: var(--color2);
+    display: grid;
+    justify-content: center;
+    padding: 30px;
+    grid-template-columns: 45% 45%;
+
+}
+
+.card {
+    position: relative;
+    text-align: center;
+
+}
+
+.card_text {
+    position: absolute;
+    left: 0;
+    top: 70px;
+    text-align: justify;
+    padding: 30px;
+    color: antiquewhite;
+}
+
+.card_title {
+    width: 100%;
+    top: 10px;
+    position: absolute;
+    padding: 15px;
+    color: rgb(221, 247, 118);
 }
 
 
@@ -271,6 +342,10 @@ body {
 
 
 @media screen and (max-width:1100px) {
+    .main_cards {
+        padding: 10px;
+        grid-template-columns: 45% 45%;
+    }
 
     .logo {
         height: 120px;
@@ -348,6 +423,10 @@ body {
 
 
 @media screen and (max-width:950px) {
+    .main_cards {
+        padding: 5px;
+        grid-template-columns: 48% 48%;
+    }
 
     .icon {
         font-size: 28px;
@@ -372,6 +451,14 @@ body {
 }
 
 @media screen and (max-width:800px) {
+    .card_text {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .card_title {
+        font-size: 15px;
+    }
 
     footer {
         height: 300px;
@@ -449,6 +536,32 @@ body {
         width: 90%;
     }
 
+    .main_cards {
+        height: 1300px;
+        grid-template-columns: 80%;
+        grid-template-rows: 25% 25% 25% 25%;
+    }
+
+    .card_text {
+
+        padding: 25px;
+    }
+
+    .main {
+        height: 1450px;
+    }
+
+    .main_container {
+        width: 85%;
+        height: 100px;
+    }
+
+    .card {
+        height: 270px;
+        margin: 5px;
+        border-radius: 15px;
+    }
+
     footer {
         height: 230px;
     }
@@ -504,12 +617,16 @@ body {
         cursor: pointer;
     }
 
+    .card {
+        margin-top: 20px;
+    }
+
     #oculto {
         display: block;
     }
 
     .main_container {
-        background-color: var(--color1);
+        background-color: var(--color3);
     }
 
     .space {
@@ -565,8 +682,12 @@ body {
         margin: auto;
     }
 
+    .main_title {
+        font-size: 25px;
+    }
+
     .space {
-        margin-top: 90px;
+        margin-top: 99px;
     }
 }
 
@@ -619,6 +740,17 @@ body {
 }
 
 @media screen and (max-width:454px) {
+
+    .card_title {
+        top: 30px;
+        padding: 5px;
+    }
+
+    .card_text {
+        top: 60px;
+        padding: 15px;
+    }
+
     .header {
         height: 120px;
     }
@@ -670,9 +802,6 @@ body {
     .footer_background {
         height: 180px;
     }
-}
-
-@media screen and (max-width:436px) {
     .footer_img {
         width: 90px;
         height: 60px;
@@ -683,6 +812,15 @@ body {
     .logo {
         width: 100px;
         height: 80px;
+    }
+
+    .main_title{
+        font-size: 20px;
+    }
+
+    .main_cards {
+        
+        grid-template-columns: 90%;
     }
 
     footer {
@@ -733,12 +871,14 @@ body {
 }
 
 @media screen and (max-width:347px) {
-
+.main_title{
+    font-size:17px ;
+}
     .logo {
         height: 60px;
         width: 60px;
     }
-    
+
     .footer_derechos {
         left: 32%;
         font-size: 7px;
