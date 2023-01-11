@@ -1,3 +1,15 @@
+let elemento = document.getElementById("menu");
+let contenedor=document.getElementById("main_container")
+
+
+function activar(){
+    if(elemento.checked==true){
+     contenedor.classList.add("space");
+    }else{
+        contenedor.classList.remove("space");
+    }
+}
+
 let slideIndex = 1;
 showSlides(slideIndex)
 
@@ -22,3 +34,4 @@ function showSlides(n){
     slides[slideIndex-1].style.display = "block";
     quadrates[slideIndex-1].className += " active";
 }
+
