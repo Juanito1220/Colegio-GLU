@@ -2,6 +2,7 @@
     --color1: rgb(51, 153, 234);
     --color2: rgb(2, 121, 197);
     --color3: rgb(0, 109, 185);
+    --color4: rgb(40, 58, 146);
     scroll-behavior: smooth;
 }
 
@@ -108,9 +109,103 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.main {
+    padding-top: 30px;
+    width: 100%;
+    height: 740px;
+    background-color: var(--color1);
+}
+
+.main_container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: auto;
+    text-align: center;
+    width: 80%;
+}
+
+.main_title {
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.main_text {
+    color: #fff;
+    padding: 15px;
 
 }
 
+.form {
+    height: 500px;
+    width: 40%;
+
+}
+
+#input_mensaje {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    color: gray;
+    resize: none;
+}
+
+.main_principal {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.container_inputs {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--color2);
+    height: 90%;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    height: 40px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: var(--color4);
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.mapa {
+    border-radius: 10px;
+}
+
+.tel {
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(243, 243, 168);
+}
+
+.input_date {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+    border-style: none;
+}
+
+.input_date:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+.ubicacion {
+    width: 50%;
+}
 
 .footer_container {
     width: 100%;
@@ -346,6 +441,17 @@ body {
 
 }
 
+@media screen and (max-width:970px) {
+
+    .main_container {
+        width: 90%;
+    }
+
+    .tel {
+        font-size: 18px;
+    }
+
+}
 
 @media screen and (max-width:950px) {
 
@@ -391,6 +497,21 @@ body {
         height: 40px;
     }
 
+}
+
+@media screen and (max-width:785px) {
+
+    .tel {
+        font-size: 15px;
+    }
+
+    .form {
+        width: 50%;
+    }
+
+    .ubicacion {
+        width: 40%;
+    }
 }
 
 
@@ -445,6 +566,27 @@ body {
 
 
 @media screen and (max-width:591px) {
+
+    .main_principal {
+        flex-direction: column;
+    }
+
+    .form {
+        margin: auto;
+        width: 80%;
+    }
+
+    .ubicacion {
+        margin: auto;
+        width: 80%;
+        height: 350px;
+    }
+
+    .main {
+        height: 1100px;
+
+    }
+
     .header_container {
         width: 90%;
     }
@@ -570,7 +712,21 @@ body {
     }
 }
 
+@media screen and (max-width:545px) {
+    .tel {
+        font-size: 13px;
+    }
+}
+
 @media screen and (max-width:515px) {
+    .main_title {
+        font-size: 25px;
+    }
+
+    .main_text {
+        font-size: 15px;
+    }
+
     .logo {
         height: 100px;
     }
@@ -578,7 +734,6 @@ body {
     .icon {
         font-size: 22px;
     }
-
 
 }
 
@@ -617,6 +772,21 @@ body {
         margin: 15px;
     }
 }
+
+@media screen and (max-width:473px) {
+    .form {
+        width: 95%;
+    }
+
+    .ubicacion {
+        width: 95%;
+    }
+
+    .tel {
+        font-size: 17px;
+    }
+}
+
 
 @media screen and (max-width:454px) {
     .header {
@@ -715,6 +885,10 @@ body {
 
     @media screen and (max-width:372px) {
 
+        .tel{
+            font-size: 14px;
+        }
+
         .footer_derechos {
             left: 35%;
             font-size: 7px;
@@ -738,7 +912,7 @@ body {
         height: 60px;
         width: 60px;
     }
-    
+
     .footer_derechos {
         left: 32%;
         font-size: 7px;
