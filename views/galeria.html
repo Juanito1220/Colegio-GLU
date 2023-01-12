@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f696794974.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap" rel="stylesheet">
-    
+
     <title>Galeria de fotos</title>
 </head>
 
@@ -78,20 +78,26 @@
 
     <main class="main">
         <div id="main_container" class="main_container">
+
+            <div class="full_img" id="fullBox">
+                <img src="../img/imgs-gallery/1.jpg" id="fullImg" alt="">
+                <span onclick="closeImg()">X</span>
+            </div>
             <h1 class="main_title"><span class="title">GALERIA DE FOTOS</span></h1>
             <div class="main_galery">
-               <img src="../img/imgs-gallery/1.jpg" alt="">
-               <img src="../img/imgs-gallery/2.jpg" alt="">
-               <img src="../img/imgs-gallery/3.jpg" alt="">
-               <img src="../img/imgs-gallery/4.jpg" alt="">
-               <img src="../img/imgs-gallery/5.jpg" alt="">
-               <img src="../img/imgs-gallery/6.jpg" alt="">
-               <img src="../img/imgs-gallery/7.jpg" alt="">
-               <img src="../img/imgs-gallery/8.jpg" alt="">
+                <img src="../img/imgs-gallery/1.jpg" onclick="openFullImg(this.src)" alt="">
+                <img src="../img/imgs-gallery/2.jpg" onclick="openFullImg(this.src)" alt="">
+                <img src="../img/imgs-gallery/3.jpg" onclick="openFullImg(this.src)" alt="">
+                <img src="../img/imgs-gallery/4.jpg" onclick="openFullImg(this.src)" alt="">
+                <img src="../img/imgs-gallery/5.jpg" onclick="openFullImg(this.src)" alt="">
+                <img src="../img/imgs-gallery/6.jpg" onclick="openFullImg(this.src)" alt="">
+                <img src="../img/imgs-gallery/7.jpg" onclick="openFullImg(this.src)" alt="">
+                <img src="../img/imgs-gallery/8.jpg" onclick="openFullImg(this.src)" alt="">
             </div>
         </div>
     </main>
-    <script src="../js/index.js"></script>
+    <script src="../js/galeria.js"></script>
+
 </body>
 
 <footer>
