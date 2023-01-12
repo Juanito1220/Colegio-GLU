@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/proyecto.css">
+    <link rel="stylesheet" href="../css/normatividad.css">
     <link rel="stylesheet" href="../css/Normalize.css">
     <link rel="shortcut icon" href="../img/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +16,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f696794974.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap" rel="stylesheet">
-    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <title>Normatividad</title>
 </head>
 
@@ -38,25 +39,25 @@
                     <input type="checkbox" onchange="activar()" id="menu" class="nav_input">
 
                     <div class="nav__menu">
-                        <a class="nav__items nav_items_cta" href="/views/index.html">
+                        <a class="nav__items nav_items_cta" onclick="desactivar()"  href="/views/index.html">
                             <div class="icons"><i class='bx bxs-home'></i></div>Inicio
                         </a>
-                        <a class="nav__items" href="/views/Admisiones.html">
+                        <a class="nav__items" onclick="desactivar()" href="/views/Admisiones.html">
                             <div class="icons"><i class='bx bx-child'></i></div>Admisiones
                         </a>
-                        <a class="nav__items " href="/views/contacto.html">
+                        <a class="nav__items " onclick="desactivar()" href="/views/contacto.html">
                             <div class="icons"><i class='bx bxs-contact'></i></div>Contactame
                         </a>
-                        <a id="oculto" class="nav__items" href="/views/proyecto.html">
+                        <a id="oculto" class="nav__items" onclick="desactivar()" href="/views/proyecto.html">
                             <div class="icons"><i class='bx bxs-contact'></i></div>Proyecto Institucional
                         </a>
-                        <a id="oculto" class="nav__items" href="/views/Especialidades.html">
+                        <a id="oculto" class="nav__items" onclick="desactivar()" href="/views/Especialidades.html">
                             <div class="icons"><i class='bx bxs-contact'></i></div>Especialidades
                         </a>
-                        <a id="oculto" class="nav__items" href="/views/Normatividad.html">
+                        <a id="oculto" class="nav__items" onclick="desactivar()" href="/views/Normatividad.html">
                             <div class="icons"><i class='bx bxs-contact'></i></div>Normatividad
                         </a>
-                        <a id="oculto" class="nav__items" href="/views/galeria.html">
+                        <a id="oculto" class="nav__items" onclick="desactivar()"  href="/views/galeria.html">
                             <div class="icons"><i class='bx bxs-contact'></i></div>Galeria de Fotos
                         </a>
 
@@ -68,18 +69,36 @@
     </header>
     <nav class="nav__menu_option">
 
-        <a class="nav__items_option" href="/views/proyecto.html">Proyecto Institucional</a>
-        <a class="nav__items_option" href="/views/Especialidades.html">Especialidades</a>
-        <a class="nav__items_option" href="/views/Normatividad.html">Normatividad</a>
-        <a class="nav__items_option" href="/views/galeria.html">Galeria de Fotos</a>
+        <a class="nav__items_option" id="menu1" href="/views/proyecto.html">Proyecto Institucional</a>
+        <a class="nav__items_option" id="menu2" href="/views/Especialidades.html">Especialidades</a>
+        <a class="nav__items_option" id="menu3" href="/views/Normatividad.html">Normatividad</a>
+        <a class="nav__items_option" id="menu4" href="/views/galeria.html">Galeria de Fotos</a>
 
     </nav>
 
 
     <main class="main">
-        
+        <div id="main_principal" class="main_principal">
+            <div class="main_container">
+                <h1 class="main_title">MANUAL DE CONVIVENCIA</h1>
+            </div>
+            <div class="main_text">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dignissimos tempora quidem eaque
+                    similique cumque at architecto deserunt impedit voluptatibus rerum libero esse accusantium iure ad
+                    magni iusto consectetur quibusdam necessitatibus reprehenderit deleniti, placeat minus dolorem. Rem,
+                    molestiae? Mollitia asperiores hic blanditiis quas possimus quasi ducimus sapiente magni nemo
+                    officia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dignissimos tempora quidem eaque
+                    similique cumque at architecto deserunt impedit voluptatibus rerum libero esse accusantium iure ad
+                    magni iusto consectetur quibusdam necessitatibus reprehenderit deleniti, placeat minus dolorem. Rem,
+                    molestiae? Mollitia asperiores hic blanditiis quas possimus quasi ducimus sapiente magni nemo
+                    officia?</p>
+                   <a href="../doc/MANUAL DE CONVIVENCIA.pdf" download=""><img class="main_img" src="../img/manual.svg" alt=""></a> 
+                    <a href="../doc/MANUAL DE CONVIVENCIA.pdf" download="" class="main_par">Descargar</a>
+            </div>
+        </div>
+
     </main>
-    <script src="../js/index.js"></script>
+    <script src="../js/normatividad.js"></script>
 </body>
 
 <footer>
