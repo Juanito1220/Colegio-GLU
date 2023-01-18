@@ -179,10 +179,10 @@ body {
 
 .main_contener_cards{
     margin: auto;
-    width: 80%;
+    width: 50%;
     height: 500px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 .card{
     margin: auto;
@@ -201,11 +201,35 @@ body {
     border-radius: 0%;
 }
 
+
+.card:hover .text_card{
+    display: block;
+}
+
+
+.card:hover .title_card2{
+    display: block;
+}
+
+.card:hover .title_card{
+    display: none;
+}
+
+.title_card2{
+    display: none;
+}
+
+.title_card2{
+    font-size: 20px;
+    color:rgb(48, 59, 48);
+    padding: 10px;
+}
+
+
 .title_card{
     font-size: 28px;
     color:rgb(48, 59, 48);
     padding: 10px;
-    
 }
 
 .text_card{
@@ -213,6 +237,7 @@ body {
     padding: 15px; 
     text-align: justify; 
     display: none;
+  
 }
 
 

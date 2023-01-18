@@ -129,6 +129,7 @@ main {
 .main_img {
     width: 70%;
     height: 500px;
+    object-fit: cover;
 }
 
 .prev,
