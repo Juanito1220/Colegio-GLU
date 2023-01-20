@@ -738,7 +738,7 @@ body {
     }
 
     .space2 {
-        margin-top: 90px;
+        margin-top: 99px;
     }
 
     .nav__menu_option {
@@ -959,7 +959,7 @@ body {
     .icon {
         margin: 11px;
     }
-
+}
 
     @media screen and (max-width:389px) {
         .footer_derechos {
@@ -1015,7 +1015,6 @@ body {
         }
     }
 
-}
 
 @media screen and (max-width:347px) {
 

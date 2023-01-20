@@ -631,11 +631,12 @@ body {
         display: block;
     }
 
+  
     .main_container {
         background-color: var(--color3);
     }
 
-    .space {
+    .space2 {
         margin-top: 99px;
     }
 
@@ -692,7 +693,7 @@ body {
         font-size: 25px;
     }
 
-    .space {
+    .space2 {
         margin-top: 99px;
     }
 }
@@ -850,7 +851,7 @@ body {
         margin: 11px;
     }
 
-
+}
     @media screen and (max-width:389px) {
         .footer_derechos {
             left: 30%;
@@ -874,7 +875,6 @@ body {
         }
     }
 
-}
 
 @media screen and (max-width:347px) {
 .main_title{

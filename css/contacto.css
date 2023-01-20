@@ -706,10 +706,6 @@ body {
     a.nav__items {
         margin: auto;
     }
-
-    .space {
-        margin-top: 90px;
-    }
 }
 
 @media screen and (max-width:545px) {
@@ -821,6 +817,10 @@ body {
 
     }
 
+    .space {
+        margin-top: 99px;
+    }
+
 }
 
 @media screen and (max-width:436px) {
@@ -876,7 +876,7 @@ body {
         margin: 11px;
     }
 
-
+}
     @media screen and (max-width:389px) {
         .footer_derechos {
             left: 30%;
@@ -903,8 +903,6 @@ body {
             font-size: 15px;
         }
     }
-
-}
 
 @media screen and (max-width:347px) {
 

@@ -1011,7 +1011,7 @@ main {
         margin: 11px;
     }
 
-
+}
     @media screen and (max-width:389px) {
         .footer_derechos {
             left: 30%;
@@ -1039,8 +1039,6 @@ main {
 
         height: 470px;
     }
-
-}
 
 @media screen and (max-width:347px) {
 
